@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Pause } from "lucide-react";
+import Image from "next/image";
 
 const Services = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -120,11 +121,14 @@ const Services = () => {
                     }`}
                     onClick={() => handleCategoryClick(idx)}
                   >
-                    <img
+                    <Image
                       src={item.img}
                       alt={item.label}
-                      className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 object-contain mb-1 md:mb-2"
+                      width={48}
+                      height={48}
+                      className="object-contain mb-1 md:mb-2"
                     />
+
                     <span className="text-white text-xs md:text-sm text-center">
                       {item.label}
                     </span>

@@ -1,5 +1,4 @@
 import Image from "next/image";
-import logo from "../../public/assets/Screenshot_1.png";
 const Footer = () => {
   return (
     <footer className="bg-white py-12 px-4">
